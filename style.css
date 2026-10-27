@@ -1,37 +1,64 @@
-header{
-    background-color: rgb(41, 37, 77);
-    width: 100vw;
+header {
+    background-color: #1E1B4B;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex; 
+    gap: clamp(1rem,45vw,40rem);
 }
-.brand{
+
+.brand {
     display: flex;
     align-items: center;
-    padding:0 0 0 0
+    gap: 1rem;
 }
-#brand-name{
+
+#brand-name {
     font-size: 2rem;
-    color: rgb(152, 193, 128);
+    color: #5EEAD4;
+    margin: 0;
 }
-#brand-img{
-    width: 2rem;
-    height: 2rem;
+
+#brand-img {
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
 }
-nav{
+
+.nav-bar {
     width: 100%;
-    height: clamp(15rem,50vh,100rem);
+    padding: 2rem 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vh;
+    gap: 1.5rem; 
 }
-nav a{
+
+.nav-bar a {
     text-align: center;
-    text-justify: auto;
-    border-radius: 3vw;
-    border: 0.4vw solid rgb(79, 46, 101);
-    height: clamp(2rem,8vh,7rem);
-    width: clamp(3rem,10vw,10rem);
-    color: black;
-    text-decoration-line: none;
+    border-radius: 0.5rem; 
+    border: 2px solid #6366f1; 
+    padding: 0.75rem 2rem;
+    width: 12rem; 
+    color: #1E1B4B; 
+    background-color: #EEF2FF; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.4s ease; 
+}
+
+.nav-bar a:hover {
+    background-color: #6366F1;
+    color: white;
+}
+
+nav{
+    display: flex;
+    gap: clamp(1rem,5vw,5rem);
+}
+a{
+    color: #EEF2FF;
+    text-decoration: none;
+    text-justify: center;
 }
