@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trace is a tool, offline expense tracker. 
+    Track your daily expenses, set monthly budgets.">
+    <title>Trace | Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1 id="brand-name">Trace</h1>
+            <img id="brand-img" alt="brand logo" src="">
+        </div>
+        <nav>
+            <a href="input.html" target="_blank">Add Expense</a>
+            <a href="history.html" target="_blank">History</a>
+            <a href="analysis.html" target="_blank">Analysis</a>
+        </nav>
+    </header>
+    <main>
+        <form action="/submit">
+            <label for="date">Date : </label>
+            <input id="date" type="date" required>
+            <label for="amount">Amount : </label>
+            <input id="amount" type="number" required>
+            <button id="form-butn"></button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Trace. All rights reserved.</p>
+    </footer>
+</body>
+</html>
