@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace | History</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Trace</a>
+        <nav>
+            <a href="input.html">Add Expense</a>
+            <a href="history.html" class="active">History</a>
+            <a href="analysis.html">Analysis</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="card-header">
+                <h2>Expense History</h2>
+                <div class="actions">
+                    <button id="export-btn" class="btn-outline">Export</button>
+                    <label for="import-file" class="btn-outline">Import</label>
+                    <input type="file" id="import-file" accept=".json" hidden>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-list"></tbody>
+                </table>
+            </div>
+            <p id="empty-msg" class="empty">No expenses recorded.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Trace.</p>
+    </footer>
+</body>
+</html>
