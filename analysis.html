@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace | Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">Trace</a>
+        <nav>
+            <a href="input.html">Add Expense</a>
+            <a href="history.html">History</a>
+            <a href="analysis.html" class="active">Analysis</a>
+        </nav>
+    </header>
+    <main>
+        <section class="budget-bar card">
+            <input type="number" id="budget-input" placeholder="Set Monthly Budget (₹)">
+            <button id="save-budget-btn" class="btn">Set</button>
+        </section>
+        <div id="budget-warning" class="warning hidden"></div>
+        <section class="stats-grid">
+            <div class="card stat">
+                <span>Spent</span>
+                <h3 id="total-amount">₹0</h3>
+            </div>
+            <div class="card stat">
+                <span>Budget</span>
+                <h3 id="budget-display">₹0</h3>
+            </div>
+            <div class="card stat">
+                <span>Savings</span>
+                <h3 id="savings-amount">₹0</h3>
+            </div>
+            <div class="card stat">
+                <span>Avg / Day</span>
+                <h3 id="avg-daily">₹0</h3>
+            </div>
+            <div class="card stat">
+                <span>Safe / Day</span>
+                <h3 id="safe-daily">₹0</h3>
+            </div>
+            <div class="card stat">
+                <span>Top Category</span>
+                <h3 id="top-category">None</h3>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Risk Assessment</h2>
+            <div id="risk-container" class="risk-list">
+                <p id="risk-empty" class="empty">Add expenses to see risks.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Trace.</p>
+    </footer>
+</body>
+</html>
